@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Tiling, Regrouting & Sealant Tips | Ultra-Seal</title>
+  <meta name="description" content="Expert advice on regrouting, silicone replacement, grout sealing and bathroom maintenance from the specialists at Ultra-Seal.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ultra-seal.co.uk/blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1a3550; --teal: #5a9fb5; --teal2: #7bbdd0;
+      --white: #fff; --off: #f7f9fb; --border: #e4ecf0;
+      --text: #1a2d3d; --sub: #637d8c;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); }
+
+    header { position: sticky; top: 0; z-index: 99; background: #fff; box-shadow: 0 1px 0 var(--border); }
+    .nav { max-width: 1160px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.2rem; font-weight: 800; color: var(--navy); text-decoration: none; }
+    .logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { text-decoration: none; font-size: .9rem; font-weight: 500; color: var(--sub); transition: color .18s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+    .nav-cta { background: var(--navy); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-size: .88rem !important; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--teal) !important; }
+
+    .blog-hero { background: var(--navy); padding: 80px 32px 72px; text-align: center; }
+    .blog-hero .eyebrow { display: inline-block; background: rgba(90,159,181,.15); color: var(--teal2); font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 40px; margin-bottom: 20px; border: 1px solid rgba(90,159,181,.3); }
+    .blog-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: var(--white); margin-bottom: 16px; }
+    .blog-hero p { font-size: 1rem; color: rgba(255,255,255,.55); max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+    .blog-wrap { max-width: 1160px; margin: 0 auto; padding: 64px 32px 96px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+    .blog-card { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: box-shadow .18s, transform .18s; }
+    .blog-card:hover { box-shadow: 0 8px 32px rgba(26,53,80,.1); transform: translateY(-2px); }
+    .blog-card-img { background: var(--navy); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+    .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .blog-card-tag { font-size: .7rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--teal); }
+    .blog-card-title { font-size: 1rem; font-weight: 700; color: var(--navy); line-height: 1.4; }
+    .blog-card-excerpt { font-size: .87rem; color: var(--sub); line-height: 1.65; flex: 1; }
+    .blog-card-read { font-size: .8rem; font-weight: 600; color: var(--teal); margin-top: 8px; }
+
+    .coming-soon { opacity: .5; pointer-events: none; }
+
+    .blog-cta { background: var(--off); border-radius: 16px; padding: 48px; margin-top: 64px; text-align: center; border: 1px solid var(--border); }
+    .blog-cta h3 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .blog-cta p { font-size: .92rem; color: var(--sub); margin-bottom: 28px; }
+    .btn { display: inline-flex; align-items: center; padding: 14px 28px; border-radius: 9px; font-size: .95rem; font-weight: 600; text-decoration: none; }
+    .btn-navy { background: var(--navy); color: var(--white); }
+    .btn-navy:hover { background: var(--teal); }
+
+    footer { background: var(--navy); padding: 32px; text-align: center; }
+    footer p { font-size: .82rem; color: rgba(255,255,255,.3); }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; }
+    footer a:hover { color: var(--teal2); }
+
+    @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .blog-wrap { padding: 40px 20px 64px; }
+      .blog-hero { padding: 56px 20px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="logo">Ultra<span>-Seal</span></a>
+    <div class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#gallery">Gallery</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="/#quote" class="nav-cta">Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<div class="blog-hero">
+  <div class="eyebrow">Expert Advice</div>
+  <h1>The Ultra-Seal Blog</h1>
+  <p>Honest tips on regrouting, silicone, grout sealing and keeping your bathroom in top condition.</p>
+</div>
+
+<div class="blog-wrap">
+  <div class="blog-grid">
+
+    <a class="blog-card" href="/blog/why-does-shower-silicone-go-black-and-peel">
+      <div class="blog-card-img">🚿</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Silicone &amp; Sealing</span>
+        <div class="blog-card-title">Why Does Shower Silicone Go Black and Peel Away?</div>
+        <p class="blog-card-excerpt">The black staining on your shower silicone is mould — and once it's inside the sealant, scrubbing won't fix it. Here's the real cause and what to do.</p>
+        <span class="blog-card-read">Read article →</span>
+      </div>
+    </a>
+
+    <div class="blog-card coming-soon">
+      <div class="blog-card-img">🔧</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Regrouting</span>
+        <div class="blog-card-title">How Long Does Regrouting Last? And When Do You Need It Done Again?</div>
+        <p class="blog-card-excerpt">Grout lasts longer than most people think — but certain conditions shorten its lifespan dramatically. Here's what to look for.</p>
+        <span class="blog-card-read">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="blog-card coming-soon">
+      <div class="blog-card-img">💧</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Grout</span>
+        <div class="blog-card-title">Why Does Shower Grout Go Black? (And How to Actually Fix It)</div>
+        <p class="blog-card-excerpt">Black shower grout is almost always mould. Bleach masks it temporarily. Here's the only thing that actually removes it for good.</p>
+        <span class="blog-card-read">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="blog-card coming-soon">
+      <div class="blog-card-img">🏗️</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Cost &amp; Value</span>
+        <div class="blog-card-title">Regrouting vs Retiling: Which One Do You Actually Need?</div>
+        <p class="blog-card-excerpt">Most people who think they need new tiles just need new grout. We break down the difference, the cost, and how to tell which applies to you.</p>
+        <span class="blog-card-read">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="blog-card coming-soon">
+      <div class="blog-card-img">🛁</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Silicone &amp; Sealing</span>
+        <div class="blog-card-title">Can You Regrout a Shower Without Removing the Tiles?</div>
+        <p class="blog-card-excerpt">Yes — and it's exactly what we do. No mess, no retiling, no waiting weeks. Here's how the process works from start to finish.</p>
+        <span class="blog-card-read">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="blog-card coming-soon">
+      <div class="blog-card-img">🧹</div>
+      <div class="blog-card-body">
+        <span class="blog-card-tag">Maintenance</span>
+        <div class="blog-card-title">How to Keep Your Shower Grout White (Without Scrubbing for Hours)</div>
+        <p class="blog-card-excerpt">A few simple habits after regrouting will keep your bathroom looking fresh for years. Here's what actually makes a difference.</p>
+        <span class="blog-card-read">Coming soon</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="blog-cta">
+    <h3>Got a question about your tiles?</h3>
+    <p>Send us a message and we'll give you an honest answer — no sales pressure, no obligation.</p>
+    <a href="/#quote" class="btn btn-navy">Ask Us Anything</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Ultra-Seal. All rights reserved. &nbsp;·&nbsp; <a href="/">Back to homepage</a></p>
+</footer>
+
+</body>
+</html>
