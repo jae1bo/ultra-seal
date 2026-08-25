@@ -528,30 +528,36 @@
 
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-      .hero-visual { order: -1; }
-      .hero-badge { bottom: -12px; left: 12px; }
+      .hero-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
       .why-grid { grid-template-columns: 1fr; gap: 40px; }
       .commercial-inner { grid-template-columns: 1fr; gap: 40px; }
       .quote-layout { grid-template-columns: 1fr; gap: 36px; }
       .footer-top { grid-template-columns: 1fr 1fr; }
       .footer-brand { grid-column: 1/-1; }
     }
+    @media (max-width: 600px) {
+      .hero-inner { grid-template-columns: 55% 45%; gap: 14px; padding: 36px 16px 44px; }
+      .hero h1 { font-size: 1.6rem; letter-spacing: -.3px; margin-bottom: 8px; }
+      .hero-tagline { font-size: .72rem; }
+      .hero-sub { font-size: .82rem; line-height: 1.55; margin-bottom: 20px; }
+      .hero-pill { font-size: .62rem; padding: 5px 10px; margin-bottom: 16px; }
+      .hero-btns { gap: 8px; }
+      .hero-btns .btn { padding: 11px 14px; font-size: .8rem; gap: 4px; }
+      .hero-trust { gap: 12px; margin-top: 20px; padding-top: 18px; }
+      .ht-val { font-size: 1.1rem; }
+      .ht-label { font-size: .65rem; }
+      .hero-img-frame { border-radius: 10px; }
+      .hero-badge { padding: 10px 12px; gap: 8px; margin-top: 10px; }
+      .badge-icon { width: 28px; height: 28px; font-size: .9rem; border-radius: 7px; }
+      .badge-text strong { font-size: .72rem; }
+      .badge-text span { font-size: .65rem; }
+    }
     @media (max-width: 700px) {
       .nav-links { display: none; }
       .burger { display: flex; }
       .section { padding: 56px 20px; }
       .section-sm { padding: 40px 20px; }
-      .hero-inner { padding: 36px 20px 48px; gap: 28px; }
-      .hero h1 { font-size: 2.4rem; }
-      .hero-sub { font-size: .95rem; }
-      .hero-btns .btn { padding: 13px 20px; font-size: .9rem; }
-      .hero-trust { gap: 16px; flex-wrap: wrap; margin-top: 32px; padding-top: 28px; }
-      .ht-val { font-size: 1.3rem; }
-      .hero-img-frame { border-radius: 12px; }
-      .hero-badge { padding: 12px 14px; }
-      .badge-text strong { font-size: .8rem; }
-      .badge-text span { font-size: .7rem; }
+      .hero-inner { padding: 36px 20px 48px; }
       .services-grid { grid-template-columns: 1fr; gap: 14px; }
       .ba-grid { grid-template-columns: 1fr; gap: 14px; }
       .ba-card img { height: 220px; }
