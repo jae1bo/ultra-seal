@@ -1194,6 +1194,10 @@
 </a>
 
 <script>
+  // Always start at top on load/refresh
+  if (history.scrollRestoration) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+
   // Mobile nav
   const burger = document.getElementById('burger');
   const mobileNav = document.getElementById('mobile-nav');
