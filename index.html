@@ -251,32 +251,19 @@
     }
 
     /* ═══ SERVICES ═══ */
-    .services-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px;
+    .svc-list {
+      max-width: 680px; margin: 40px auto 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
     }
-    .svc-card {
-      background: #fff; border: 1px solid var(--border); border-radius: 14px;
-      padding: 32px 28px; transition: box-shadow .2s, border-color .2s, transform .2s;
+    .svc-row {
+      display: flex; align-items: center; gap: 16px;
+      padding: 18px 24px; border-bottom: 1px solid var(--border);
+      transition: background .15s;
     }
-    .svc-card:hover {
-      box-shadow: 0 8px 32px rgba(26,53,80,.1);
-      border-color: var(--teal2); transform: translateY(-2px);
-    }
-    .svc-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: rgba(90,159,181,.12);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px; flex-shrink: 0;
-    }
-    .svc-icon svg { width: 22px; height: 22px; stroke: var(--teal); }
-    .svc-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
-    .svc-card p { font-size: .875rem; color: var(--sub); line-height: 1.65; margin-bottom: 18px; }
-    .svc-link {
-      font-size: .8rem; font-weight: 700; color: var(--teal);
-      letter-spacing: .04em; text-transform: uppercase;
-      display: flex; align-items: center; gap: 4px;
-    }
-    .svc-link::after { content: '→'; }
+    .svc-row:last-child { border-bottom: none; }
+    .svc-row:hover { background: var(--off); }
+    .svc-name { font-size: .95rem; font-weight: 700; color: var(--navy); flex-shrink: 0; min-width: 200px; }
+    .svc-desc { font-size: .85rem; color: var(--sub); flex: 1; }
+    .svc-arrow { color: var(--teal); font-size: 1rem; flex-shrink: 0; }
 
     /* ═══ WHY US ═══ */
     .why-section { background: var(--navy); color: #fff; }
@@ -562,11 +549,10 @@
 
       .badge-text strong { font-size: .8rem; }
       .badge-text span { font-size: .7rem; }
-      .services-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      .svc-card { padding: 20px 16px; }
-      .svc-icon { width: 38px; height: 38px; margin-bottom: 12px; }
-      .svc-card h3 { font-size: .9rem; margin-bottom: 6px; }
-      .svc-card p { font-size: .8rem; margin-bottom: 12px; }
+      .svc-row { flex-wrap: wrap; gap: 4px; padding: 16px 18px; }
+      .svc-name { min-width: unset; width: 100%; }
+      .svc-desc { width: 100%; }
+      .svc-arrow { display: none; }
       .ba-grid { grid-template-columns: 1fr; gap: 14px; }
 
       .reviews-grid { grid-template-columns: 1fr; gap: 14px; }
@@ -725,43 +711,37 @@
     <div class="section-head-center">
       <h2>Specialist Services</h2>
     </div>
-    <div class="services-grid">
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
-        <h3>Bathroom Regrouting</h3>
-        <p>Old, cracked, or discoloured grout removed and replaced with a fresh finish in your choice of colour.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-        <h3>Silicone &amp; Sealant Replacement</h3>
-        <p>Mouldy or peeling silicone around baths, shower trays, and basins replaced with fresh sanitary-grade sealant.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M4 12V6a4 4 0 014-4h0a4 4 0 014 4v6"/><line x1="8" y1="15" x2="8" y2="15"/><line x1="12" y1="15" x2="12" y2="15"/><line x1="16" y1="15" x2="16" y2="15"/><line x1="8" y1="18" x2="8" y2="18"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="16" y1="18" x2="16" y2="18"/></svg></div>
-        <h3>Shower Leak Repair</h3>
-        <p>Failed grout and sealant can allow water to penetrate behind tiles. We identify the issue and reseal properly.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <h3>Epoxy Grouting</h3>
-        <p>High-performance epoxy grout for commercial environments, wet rooms, and areas requiring superior durability.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></div>
-        <h3>Bathroom Restoration</h3>
-        <p>A complete refresh. Regrouting, silicone replacement, and sealing in one visit. Like a new bathroom, without the refit cost.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 007-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 007 7z"/></svg></div>
-        <h3>Waterproofing</h3>
-        <p>Proper waterproofing for wet rooms, shower enclosures, and balconies to prevent water ingress and structural damage.</p>
-        <a href="#quote" class="svc-link">Get a quote</a>
-      </div>
+    <div class="svc-list">
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Bathroom Regrouting</span>
+        <span class="svc-desc">Old, cracked or discoloured grout removed and replaced</span>
+        <span class="svc-arrow">→</span>
+      </a>
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Silicone &amp; Sealant Replacement</span>
+        <span class="svc-desc">Mouldy or peeling silicone around baths, showers and basins</span>
+        <span class="svc-arrow">→</span>
+      </a>
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Shower Leak Repair</span>
+        <span class="svc-desc">Identify and reseal failed grout and sealant properly</span>
+        <span class="svc-arrow">→</span>
+      </a>
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Epoxy Grouting</span>
+        <span class="svc-desc">High-performance grout for wet rooms and commercial use</span>
+        <span class="svc-arrow">→</span>
+      </a>
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Bathroom Restoration</span>
+        <span class="svc-desc">Full refresh — regrouting, silicone and sealing in one visit</span>
+        <span class="svc-arrow">→</span>
+      </a>
+      <a href="#quote" class="svc-row">
+        <span class="svc-name">Waterproofing</span>
+        <span class="svc-desc">Wet rooms, shower enclosures and balconies sealed properly</span>
+        <span class="svc-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
