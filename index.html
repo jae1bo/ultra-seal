@@ -196,17 +196,17 @@
     }
     .ht-label { font-size: .75rem; color: rgba(255,255,255,.4); margin-top: 4px; font-weight: 500; }
 
-    .hero-visual { position: relative; }
+    .hero-visual { display: flex; flex-direction: column; }
     .hero-img-frame {
       border-radius: 16px; overflow: hidden;
       box-shadow: 0 40px 80px rgba(0,0,0,.4);
     }
     .hero-img-frame img { width: 100%; height: auto; }
     .hero-badge {
-      position: absolute; bottom: -16px; left: -20px;
       background: #fff; border-radius: 12px;
       padding: 14px 18px; display: flex; align-items: center; gap: 12px;
       box-shadow: 0 8px 32px rgba(0,0,0,.15);
+      margin-top: 16px;
     }
     .badge-icon {
       width: 40px; height: 40px; border-radius: 10px;
