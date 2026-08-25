@@ -57,7 +57,11 @@
       --gold:   #c9973a;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: auto; }
+
+    /* Prevent sticky nav from covering anchor targets */
+    section[id], div[id] { scroll-margin-top: 80px; }
+
     body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
@@ -245,7 +249,7 @@
       box-shadow: 0 4px 24px rgba(26,53,80,.08);
       background: #fff;
     }
-    .ba-card img { width: 100%; height: 260px; object-fit: cover; }
+    .ba-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
     .ba-card-foot {
       padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;
     }
@@ -554,7 +558,7 @@
       .badge-text span { font-size: .7rem; }
       .services-grid { grid-template-columns: 1fr; gap: 14px; }
       .ba-grid { grid-template-columns: 1fr; gap: 14px; }
-      .ba-card img { height: 220px; }
+      .ba-card img { height: auto; aspect-ratio: 4/3; }
       .reviews-grid { grid-template-columns: 1fr; gap: 14px; }
       .steps-grid { flex-direction: column; gap: 28px; }
       .steps-grid::before { display: none; }
